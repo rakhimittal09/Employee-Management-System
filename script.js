@@ -79,3 +79,18 @@ function deleteEmployee(index) {
     // Refresh the employee table
     displayEmployees();
 }
+// Dark / Light Mode
+
+const themeToggle = document.getElementById("themeToggle");
+
+themeToggle.addEventListener("click", function () {
+
+    document.body.classList.toggle("dark-mode");
+
+    if(document.body.classList.contains("dark-mode")){
+        themeToggle.innerHTML = "☀️ Light Mode";
+    }else{
+        themeToggle.innerHTML = "🌙 Dark Mode";
+    }
+
+});
