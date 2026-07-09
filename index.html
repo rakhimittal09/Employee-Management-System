@@ -23,38 +23,74 @@
 
         <section class="registration">
     <h2>Employee Registration</h2>
-    <form>
-        <input type="text" placeholder="Enter Employee Name" required>
-        <input type="email" placeholder="Enter Email Address" required>
-        <select required>
-            <option value="">Select Department</option>
-            <option>HR</option>
-            <option>IT</option>
-            <option>Finance</option>
-            <option>Marketing</option>
-            <option>Sales</option>
-        </select>
-        <input type="text" placeholder="Enter Position" required>
-        <input type="number" placeholder="Enter Salary" min="1000" required>
-        <div class="btn-group">
-            <button type="submit">Submit</button>
-            <button type="reset">Reset</button>
-        </div>
-    </form>
+    <form id="employeeForm">
+        <input
+        type="text"
+        id="employeeName"
+        placeholder="Enter Employee Name"
+        required
+    >
+
+    <input
+        type="email"
+        id="employeeEmail"
+        placeholder="Enter Email Address"
+        required
+    >
+
+    <select id="employeeDepartment" required>
+        <option value="">Select Department</option>
+        <option>HR</option>
+        <option>IT</option>
+        <option>Finance</option>
+        <option>Marketing</option>
+        <option>Sales</option>
+    </select>
+
+    <input
+        type="text"
+        id="employeePosition"
+        placeholder="Enter Position"
+        required
+    >
+
+    <input
+        type="number"
+        id="employeeSalary"
+        placeholder="Enter Salary"
+        min="1000"
+        required
+    >
+
+    <div class="btn-group">
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </div>
+</form>
 </section>
 
-        <section class="search">
-            <h2>Search Employee</h2>
-            <input type="text" placeholder="Search by Name">
-            <select>
-                <option>All Departments</option>
-                <option>HR</option>
-                <option>IT</option>
-                <option>Finance</option>
-                <option>Marketing</option>
-            </select>
-        </section>
-        
+       
+<section class="search">
+
+    <h2>Search Employee</h2>
+
+    <input
+        type="text"
+        id="searchName"
+        placeholder="Search by Name"
+    >
+
+    <select id="searchDepartment">
+        <option value="">All Departments</option>
+        <option>HR</option>
+        <option>IT</option>
+        <option>Finance</option>
+        <option>Marketing</option>
+        <option>Sales</option>
+    </select>
+
+</section>
+
 <section class="employee-list">
     <h2>Employee List</h2>
     <table>
@@ -114,8 +150,10 @@
     </table>
 </section>
 
-                <tbody>
-                </tbody>
+
+<tbody id="employeeTableBody">
+</tbody>
+
             </table>
         </section>
     </main>
