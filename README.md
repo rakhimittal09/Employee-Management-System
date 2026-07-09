@@ -26,6 +26,7 @@ The Employee Management System is designed to manage employee information effici
 - Display Employee Records
 - Delete Employee Record
 - Responsive Design (Desktop, Tablet & Mobile)
+- - 🌙 Dark / Light Mode Toggle
 - HTML & CSS Validated using W3C Validator
 - Simple and Clean User Interface
 
@@ -113,6 +114,13 @@ Use **Live Server** extension in Visual Studio Code.
 ![Desktop Responsive](images/Desktop-responsive.png)
 
 ---
+## Dark Mode
+
+![Dark Mode](images/dark-Mode.png)
+----
+## Light Mode
+
+![Light Mode](images/light-Mode.png)
 
 ## Mobile Responsive View
 
@@ -123,6 +131,7 @@ Use **Live Server** extension in Visual Studio Code.
 ![Mobile Responsive 2](images/moblie-responsive-2.png)
 
 ---
+
 
 ## Footer
 
@@ -142,18 +151,15 @@ Use **Live Server** extension in Visual Studio Code.
 
 ---
 
-# 🔮 Future Improvements
+## 🔮 Future Improvements
 
 - Edit Employee Details
 - Search Employee by Name
-- Filter by Department
-- Local Storage Support
-- Data Persistence
-- Login Authentication
+- Filter Employees by Department
+- Store Data in Local Storage
+- Login & Authentication
 - Backend Integration using Node.js, Express.js & MongoDB
-- Export Employee Data to PDF/Excel
-
----
+- Export Employee Data to CSV/Excel
 
 # 👩‍💻 Author
 
