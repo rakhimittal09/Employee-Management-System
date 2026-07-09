@@ -20,17 +20,29 @@
         </nav>
     </header>
     <main>
+
         <section class="registration">
-            <h2>Employee Registration</h2>
-            <form>
-                <input type="text" placeholder="Enter Employee Name">
-                <input type="email" placeholder="Enter Email">
-                <input type="text" placeholder="Enter Department">
-                <input type="text" placeholder="Enter Position">
-                <input type="number" placeholder="Enter Salary">
-                <button type="submit">Register Employee</button>
-            </form>
-        </section>
+    <h2>Employee Registration</h2>
+    <form>
+        <input type="text" placeholder="Enter Employee Name" required>
+        <input type="email" placeholder="Enter Email Address" required>
+        <select required>
+            <option value="">Select Department</option>
+            <option>HR</option>
+            <option>IT</option>
+            <option>Finance</option>
+            <option>Marketing</option>
+            <option>Sales</option>
+        </select>
+        <input type="text" placeholder="Enter Position" required>
+        <input type="number" placeholder="Enter Salary" min="1000" required>
+        <div class="btn-group">
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </div>
+    </form>
+</section>
+
         <section class="search">
             <h2>Search Employee</h2>
             <input type="text" placeholder="Search by Name">
@@ -42,20 +54,66 @@
                 <option>Marketing</option>
             </select>
         </section>
-        <section class="employee-list">
-            <h2>Employee List</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>ID</th>
-                        <th>Name</th>
-                        <th>Email</th>
-                        <th>Department</th>
-                        <th>Position</th>
-                        <th>Salary</th>
-                        <th>Actions</th>
-                    </tr>
-                </thead>
+        
+<section class="employee-list">
+    <h2>Employee List</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Employee ID</th>
+                <th>Employee Name</th>
+                <th>Email</th>
+                <th>Department</th>
+                <th>Position</th>
+                <th>Salary</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+            <tr>
+                <td>EMP001</td>
+                <td>Rohan Sharma</td>
+                <td>rohan@gmail.com</td>
+                <td>IT</td>
+                <td>Software Engineer</td>
+                <td>₹50,000</td>
+                <td>
+                    <button>Edit</button>
+                    <button>Delete</button>
+                </td>
+            </tr>
+
+            <tr>
+                <td>EMP002</td>
+                <td>Priya Singh</td>
+                <td>priya@gmail.com</td>
+                <td>HR</td>
+                <td>HR Manager</td>
+                <td>₹45,000</td>
+                <td>
+                    <button>Edit</button>
+                    <button>Delete</button>
+                </td>
+            </tr>
+
+            <tr>
+                <td>EMP003</td>
+                <td>Amit Verma</td>
+                <td>amit@gmail.com</td>
+                <td>Finance</td>
+                <td>Accountant</td>
+                <td>₹40,000</td>
+                <td>
+                    <button>Edit</button>
+                    <button>Delete</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
                 <tbody>
                 </tbody>
             </table>
