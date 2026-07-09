@@ -54,7 +54,9 @@ Employee-Management-System/
     ├── footer.png
     ├── Validate-HTML-W3C.png
     ├── Validate-CSS-W3C.png
-    └── Screenshot 2026-07-09 132750.png
+    ├── light-Mode.png
+    └── dark-Mode.png
+
 ```
 
 ---
